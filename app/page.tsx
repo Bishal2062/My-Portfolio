@@ -8,8 +8,18 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Primary navigation"><a className="mark" href="#top" aria-label="Bishal Regmi, home">BR<span>/</span></a><div className="navLinks"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a></div><a className="contactLink" href="#contact">Let’s talk <span>↗</span></a></nav>
-      <section className="hero" id="top"><div className="heroCopy"><p className="eyebrow"><span /> Computer Science · Kent State University</p><h1>I build systems that make technical work <em>clearer.</em></h1><p className="lede">Early-career engineer working across software, security, infrastructure, and AI-assisted analytics—grounded in hands-on experience with real operational systems.</p><div className="heroActions"><a className="primary" href="#work">Explore selected work <span>↓</span></a><a className="secondary" href={profile.github}>GitHub <span>↗</span></a></div></div><div className="systemVisual" aria-label="Diagram connecting software, security, networks, and AI systems"><div className="orbit orbitOne" /><div className="orbit orbitTwo" /><span className="node n1">SOFTWARE</span><span className="node n2">SECURITY</span><span className="node n3">NETWORKS</span><span className="node n4">AI</span><div className="core"><b>BR</b><small>SYSTEMS<br/>THINKING</small></div><p>BUILD <i>·</i> SECURE <i>·</i> ANALYZE <i>·</i> AUTOMATE</p></div></section>
-      <div className="signal"><span>Software Engineering</span><span>Cybersecurity</span><span>AI & Automation</span><span>Infrastructure</span></div>
+      <section className="hero" id="top">
+        <div className="heroCopy">
+          <p className="eyebrow"><span /> Computer Science · Kent State University</p>
+          <h1>{profile.name}</h1>
+          <div className="focusLine" aria-label="Focus areas"><span>Software</span><i /><span>Cybersecurity</span><i /><span>AI</span><i /><span>Infrastructure</span></div>
+          <p className="heroStatement">I build systems that make technical work <em>clearer.</em></p>
+          <p className="lede">Early-career engineer working across software, security, infrastructure, and AI-assisted analytics—grounded in hands-on experience with real operational systems.</p>
+          <div className="heroActions"><a className="primary" href="#work">Explore selected work <span>↓</span></a><a className="secondary" href={profile.github}>GitHub <span>↗</span></a></div>
+        </div>
+        <div className="visualCard"><div className="systemVisual" aria-label="Animated diagram connecting software, security, networks, and AI systems"><div className="orbit orbitOne" /><div className="orbit orbitTwo" /><span className="node n1">SOFTWARE</span><span className="node n2">SECURITY</span><span className="node n3">NETWORKS</span><span className="node n4">AI</span><div className="core"><b>BR</b><small>SYSTEMS<br/>THINKING</small></div><p>BUILD <i>·</i> SECURE <i>·</i> ANALYZE <i>·</i> AUTOMATE</p></div></div>
+      </section>
+      <div className="signal"><span>Build useful software</span><span>Assess real risk</span><span>Analyze operations</span><span>Automate with guardrails</span></div>
 
       <section className="section intro" id="about"><div><p className="sectionLabel">01 / HOW I WORK</p><h2>Across the stack.<br/>Close to the problem.</h2></div><div className="introText"><p>I like understanding both <strong>how systems are built</strong> and <strong>how they operate in the real world.</strong> That perspective has taken me from security and recovery planning to network operations—and then into building software that supports better technical decisions.</p><p>I am early in my career, but the problems have been real: incomplete data, operational constraints, confidentiality, competing priorities, and the need to explain complex work clearly.</p></div></section>
       <section className="capabilities" aria-label="Capabilities">{capabilities.map(([name, text], i) => <article key={name}><span>0{i + 1}</span><h3>{name}</h3><p>{text}</p></article>)}</section>
