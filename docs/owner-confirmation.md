@@ -7,5 +7,6 @@
 - Latest resume PDF. Add it as `public/Bishal-Regmi-Resume.pdf`, then replace the footer note with a download link.
 - Whether the internship title should be rendered exactly as “Cybersecurity / IT Internship.”
 - Any additional public repositories worth presenting. Only the verified network analytics repository is linked.
+- Exact HACKSU involvement: events attended, projects built, dates, team responsibilities, or leadership. The site currently uses the conservative wording “Participant” and does not claim specific achievements.
 
 No GPA, graduation date, certifications, numeric impact claims, confidential infrastructure data, private findings, hostnames, IP addresses, or employee details are published.
